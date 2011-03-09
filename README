@@ -1,0 +1,58 @@
+Shurly
+======
+
+A URL shortener written in node.js using MongoDB for data storage.
+
+This is a rewrite of a PHP/memcachedb-based shortner I wrote a while ago
+(http://jmp.li/) and was written to enable me to get to know node.js a lot
+better.
+
+It does not use any of the web frameworks that are becoming available for
+node.js since that would 1) unnecessarily slow the thing down, and 2) go
+against the point which was to get to know node.js.
+
+Install
+=======
+
+* Install MongoDB and start mongod
+* Modify the configuration options in config.js as required
+* Run it
+
+Customisation
+=============
+
+The templates are in the static folder, and they're intentionally not designed
+to be ultra flexible. There's a separate header and footer, and several of the
+templates have placeholders that look like %%var%%.
+
+Beyond that you could implement another data provider. I've only implemented a
+MongoDB provider, but in a way that allows multiple engines to be made
+available. I'll likely implement a MySQL provider with memcache-based caching
+as a technical exercise at some point. See the dataProviders folder for more
+info.
+
+The templates are cached in memory at startup so will not be reloaded while
+shurly is running.
+
+Known issues
+============
+
+There is a potential race condition when new URLs are created which I may or
+may not get around to addressing. Other than that I think it's pretty solid.
+Feel free to let me know otherwise - this is a learning experience!
+
+Live demo?
+==========
+
+Not as yet, but it may replace the backend of http://jmp.li/ after further
+testing.
+
+Author
+======
+
+* Stuart Dallas
+* 3ft9 Ltd
+* http://3ft9.com/
+* Email is my first name at the domain name
+
+March 9th, 2011 @ 4:02am

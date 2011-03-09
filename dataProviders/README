@@ -1,0 +1,16 @@
+Data Providers
+==============
+
+Modules in this directory must implement the spec contained herein. Which
+provider to use is specified in the config module, along with parameters
+specific to each one.
+
+Modules must export an object named data, which implements the following
+methods...
+
+data.init(params)
+
+	This method should connect to the data source. Once it returns the module
+	must be ready to respond to requests to set and get data.
+
+
