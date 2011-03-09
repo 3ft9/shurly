@@ -14,9 +14,10 @@ against the point which was to get to know node.js.
 Install
 =======
 
+* Install node.js and the node-mongodb-native module
 * Install MongoDB and start mongod
 * Modify the configuration options in config.js as required
-* Run it
+* Run it: node shurly.js
 
 Customisation
 =============
