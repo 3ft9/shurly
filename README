@@ -1,5 +1,5 @@
-Shurly
-======
+Shurly 0.1
+==========
 
 A URL shortener written in node.js using MongoDB for data storage.
 
