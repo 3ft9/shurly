@@ -1,5 +1,5 @@
-Shurly
-======
+Shurly 0.1
+==========
 
 A URL shortener written in node.js using MongoDB for data storage.
 
@@ -41,6 +41,14 @@ Known issues
 There is a potential race condition when new URLs are created which I may or
 may not get around to addressing. Other than that I think it's pretty solid.
 Feel free to let me know otherwise - this is a learning experience!
+
+Git conventions
+===============
+
+Note that this project uses git-flow. See the following for more info...
+
+* http://nvie.com/posts/a-successful-git-branching-model/
+* http://github.com/nvie/gitflow
 
 Live demo?
 ==========
