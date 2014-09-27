@@ -2,8 +2,17 @@
 	Gimme a URL and I'll give you a shorter one that jumps right to it.
 </p>
 <div style="text-align:center;">
-	<form method="post" action="/shorten">
+	<form method="get" action="/">
 		<input type="text" id="url" name="url" size="30" style="margin-right:1em;" />
 		<input type="submit" value="shorten it &raquo;" />
 	</form>
 </div>
+<p>
+	<ul>
+		<li>Get basic info and stats about any jmp.li URL by changing the domain name from <strong>jmp.li</strong> to <strong>info.jmp.li</strong>. Try it: <a href="http://info.jmp.li/kc">http://info.jmp.li/kc</a>.</li>
+		<li>Add jmp.li/ to the address bar and hit enter to shorten it. Try it: <a href="http://jmp.li/http://3ft9.com/">jmp.li/http://3ft9.com/</a></li>
+		<li>Drag this bookmarklet to your toolbar and click it at any time to shorten the current URL: <a href="javascript:void(location.href='http://create.jmp.li/?url='+encodeURIComponent(location.href));">Shorten with JMP.LI</a></li>
+		<li>For developers we have a simple API. Use <strong>http://api.jmp.li/?url=&lt;url&gt;</strong> to shorten a URL and get back just the shortened version in plain text. Try it: <a href="http://api.jmp.li/?url=http%3A%2F%2F3ft9.com%2F">http://api.jmp.li/?url=http://3ft9.com/</a></li>
+		<li>Developers can also get stats in machine-readable formats by simply adding .json or .xml to the end of an info URL.  Try it: <a href="http://info.jmp.li/kc.json">http://info.jmp.li/kc.json</a> or <a href="http://info.jmp.li/kc.xml">http://info.jmp.li/kc.xml</a>.</li>
+	</ul>
+</p>
